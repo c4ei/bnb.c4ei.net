@@ -14,7 +14,7 @@ const farms: FarmConfig[] = [
     image: 'sawon-busd',
   },
   {
-    pid: 1186131, // 2022-11-18
+    pid: 1186136, // 2022-11-18
     risk: 2,
     lpSymbol: 'SAWON-wBNB LP',
     lpAddresses: { 56: '0x6a48d37EC1257EdF54b99b99B4E9E3bcbA598AE5', }, // SAWON-BNB LP swap.c4ei.net 56
