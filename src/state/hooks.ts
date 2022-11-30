@@ -81,7 +81,8 @@ export const usePriceBnbBusd = (): BigNumber => {
 }
 
 export const usePriceSawonBusd = (): BigNumber => {
-  const pid = 1186131; // SAWON-BUSD LP  22-11-30
+  // const pid = 1186131; // SAWON-BUSD LP  22-11-30
+  const pid = 0; // SAWON-BUSD LP  22-11-30
   const farm = useFarmFromPid(pid);
   return farm.tokenPriceVsQuote ? new BigNumber(farm.tokenPriceVsQuote) : ZERO;
 }
