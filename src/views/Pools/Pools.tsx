@@ -19,14 +19,14 @@ import { useFarms, usePriceBnbBusd, usePools, usePriceSawonBusd } from 'state/ho
 import { QuoteToken, PoolCategory } from 'config/constants/types'
 import FlexLayout from 'components/layout/Flex'
 import Page from 'components/layout/Page'
-import Background from 'components/layout/Background';
+// import Background from 'components/layout/Background';
 import Coming from './components/Coming'
 import PoolCard from './components/PoolCard'
 import PoolTabButtons from './components/PoolTabButtons'
 import Divider from './components/Divider'
 
 const SAWON = new Token(ChainId.MAINNET, '0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66', 18)
-const MATIC = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18)
+const BNB = new Token(ChainId.MAINNET, '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c', 18)
 
 const Pools: React.FC = () => {
   const { path } = useRouteMatch()
@@ -52,7 +52,7 @@ const Pools: React.FC = () => {
           if (mytoken !== '0xbb4CdB9CBd36B01bD1cBaEBF2De08d9173bc095c') {
             // console.log('aj ****** isLp', _isLp, mytoken)
             if (_isLp === true) {
-              console.log('myLPtokenDATA11')
+              // console.log('myLPtokenDATA11')
               const calls = [
                 // Balance of quote token on LP contract
                 {
@@ -80,13 +80,13 @@ const Pools: React.FC = () => {
 
               const LpPrice = tokenAmount.multipliedBy(cakebusd).multipliedBy(new BigNumber(2)).div(LpAmount)
 
-              console.log('LpPrice', token, LpPrice.toNumber(), LpAmount.toNumber())
+              // console.log('LpPrice', token, LpPrice.toNumber(), LpAmount.toNumber())
               setPrice(LpPrice)
             } else {
               const TOKEN = new Token(ChainId.MAINNET, mytoken, _tokenDecimals)
               Fetcher.fetchPairData(
                 TOKEN,
-                MATIC,
+                BNB,
                 getDefaultProvider('https://patient-long-flower.bsc.quiknode.pro/e8d35735534a1fa9c3680c58e16b3847be567cf4/'),
               ).then((pairData) =>
                 setPrice(
@@ -157,7 +157,7 @@ const Pools: React.FC = () => {
               const TOKEN = new Token(ChainId.MAINNET, mytoken, _tokenDecimals)
               Fetcher.fetchPairData(
                 TOKEN,
-                MATIC,
+                BNB,
                 getDefaultProvider('https://patient-long-flower.bsc.quiknode.pro/e8d35735534a1fa9c3680c58e16b3847be567cf4/'),
               ).then((pairData) =>
 
@@ -188,7 +188,7 @@ const Pools: React.FC = () => {
 
   const priceToBnb = (tokenName: string, tokenPrice: BigNumber, quoteToken: QuoteToken): BigNumber => {
     const tokenPriceBN = new BigNumber(tokenPrice)
-    if (tokenName === 'MATIC') {
+    if (tokenName === 'BNB') {
       return new BigNumber(1)
     }
     if (tokenPrice && quoteToken === QuoteToken.BUSD) {
@@ -249,7 +249,7 @@ const Pools: React.FC = () => {
       }
     }
     // console.log('RewardPrice', address, bbprice.toNumber(), price.toNumber())
-    // /!\ Assume that the farm quote price is MATIC
+    // /!\ Assume that the farm quote price is BNB
     const stakingTokenPriceInBNB = isBnbPool ? new BigNumber(1) : new BigNumber(stakingTokenFarm?.tokenPriceVsQuote)
 
     /*

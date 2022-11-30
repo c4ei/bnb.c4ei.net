@@ -6,7 +6,7 @@ export const PANCAKE_RABBITS_ADDRESS = '0xAa0fb39ECB26230808407Ca209fD4f53AeAF23
 const Nfts: Nft[] = [
   // {
   //   name: 'c4ei',
-  //   description: 'These bunnies love nothing more than swapping MATIC.',
+  //   description: 'These bunnies love nothing more than swapping BNB.',
   //   originalImage: 'https://ipfs.io/ipfs/QmPEAdVXrge7jzccmAEPE4JgvezEtUfKx97ej1uCu7CUdc?filename=21004.png',
   //   previewImage: 'c4ei.png',
   //   blurImage: 'c4ei.png',

@@ -33,19 +33,19 @@ export enum QuoteToken {
   // 'PLUM' = 'PLUM',
   // 'SLIME' = 'SLIME',
   // 'TAKO' = 'TAKO'
-  'MATIC' = 'MATIC',
+  // 'BNB' = 'BNB',
 }
 
 export enum PoolCategory {
   'COMMUNITY' = 'Community',
   'CORE' = 'Core',
-  'BINANCE' = 'Binance', // Pools using native MATIC behave differently than pools using a token
-  'MATIC' = 'Matic', // Pools using native MATIC behave differently than pools using a token
+  'BINANCE' = 'Binance', // Pools using native BNB behave differently than pools using a token
+  // 'BNB' = 'Bnb', // Pools using native BNB behave differently than pools using a token
 }
 
 export interface Address {
   97?: string
-  137: string
+  56: string
 }
 
 export interface FarmConfig {

@@ -213,7 +213,7 @@
     {
       "data": {
         "stringId": 356,
-        "text": "View on MaticScan"
+        "text": "View on BnbScan"
       }
     },
     {
@@ -567,19 +567,19 @@
     {
       "data": {
         "stringId": 504,
-        "text": "You\u2019ll pay for the new tokens using SAWON-MATIC LP tokens, which means you need to stake equal amounts of SAWON and MATIC in a liquidity pool to take part."
+        "text": "You\u2019ll pay for the new tokens using SAWON-BNB LP tokens, which means you need to stake equal amounts of SAWON and BNB in a liquidity pool to take part."
       }
     },
     {
       "data": {
         "stringId": 506,
-        "text": "Get SAWON-MATIC LP >"
+        "text": "Get SAWON-BNB LP >"
       }
     },
     {
       "data": {
         "stringId": 508,
-        "text": "The project gets the MATIC, MarshmallowDeFi burns the SAWON."
+        "text": "The project gets the BNB, MarshmallowDeFi burns the SAWON."
       }
     },
     {
@@ -813,13 +813,13 @@
     {
       "data": {
         "stringId": 596,
-        "text": "Buy SAWON and MATIC tokens"
+        "text": "Buy SAWON and BNB tokens"
       }
     },
     {
       "data": {
         "stringId": 598,
-        "text": "Get SAWON-MATIC LP tokens by adding SAWON and MATIC liquidity"
+        "text": "Get SAWON-BNB LP tokens by adding SAWON and BNB liquidity"
       }
     },
     {
