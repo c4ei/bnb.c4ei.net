@@ -1,0 +1,4 @@
+farm copy docker !!!
+
+docker cp /home/dev/www/defi/poly.c4ei.net/build aeee27d3e4e2:/app/
+
