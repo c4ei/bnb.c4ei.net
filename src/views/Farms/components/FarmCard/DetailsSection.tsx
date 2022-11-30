@@ -56,9 +56,10 @@ const DetailsSection: React.FC<ExpandableSectionProps> = ({
       return depositUrl
     }
     if (isTokenOnly) {
-      return `https://swap.c4ei.net/swap?${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}&chainId=137`
+      // https://pancakeswap.finance/swap?outputCurrency=0x52d1ec2ed762d7fb3be336ec678569c730b87d66&chainId=56
+      return `https://pancakeswap.finance/swap?${tokenAddresses[process.env.REACT_APP_CHAIN_ID]}&chainId=56`
     }
-    return `https://swap.c4ei.net/add/${liquidityUrlPathParts}&chainId=137`
+    return `https://pancakeswap.finance/add/${liquidityUrlPathParts}&chainId=56`
   }, [isTokenOnly, tokenAddresses, liquidityUrlPathParts, depositUrl]);
 
   return (

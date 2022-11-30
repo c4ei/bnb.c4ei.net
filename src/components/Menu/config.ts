@@ -12,11 +12,11 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'Exchange',
-        href: 'https://swap.c4ei.net/swap?chainId=137',
+        href: 'https://pancakeswap.finance/swap?outputCurrency=0x52d1ec2ed762d7fb3be336ec678569c730b87d66&chainId=56',
       },
       {
         label: 'Liquidity',
-        href: 'https://swap.c4ei.net/liquidity?chainId=137',
+        href: 'https://pancakeswap.finance/liquidity?chainId=56',
       },
     ],
   },
@@ -73,7 +73,7 @@ const config: MenuEntry[] = [
     items: [
       {
         label: 'SAWON Scan',
-        href: 'https://polygonscan.com/account/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
+        href: 'https://bscscan.com/address/0x52D1eC2ed762D7Fb3bE336Ec678569C730B87d66',
       },
       // {
       //   label: 'SAWON Price Graph',
@@ -81,7 +81,7 @@ const config: MenuEntry[] = [
       // }
       // ,{
       //   label: 'TOFY BSC Scan',
-      //   href: 'https://polygonscan.com/token/0xe1f2d89a6c79b4242f300f880e490a70083e9a1c',
+      //   href: 'https://bscscan.com/token/0xe1f2d89a6c79b4242f300f880e490a70083e9a1c',
       // },
       // {
       //   label: 'TOFY Price Graph',
